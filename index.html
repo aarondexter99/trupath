@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Trupath Plate-Reader Converter (offline)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Trupath Converter (Offline)</h1>
+  <input type="file" id="file" accept=".xls,.xlsx" />
+  <button id="convert" disabled>Convert</button>
+  <p id="status">Loading Pyodide…</p>
+
+  <!-- Pyodide runtime -->
+  <script src="pyodide/pyodide.js"></script>
+  <!-- our application logic -->
+  <script defer src="main.js"></script>
+</body>
+</html>
